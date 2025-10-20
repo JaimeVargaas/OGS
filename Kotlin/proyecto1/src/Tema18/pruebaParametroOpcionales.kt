@@ -8,6 +8,8 @@ fun iva(base: Float, iva:Float=21f) = base*(iva/100.0+1)
 // sumar parametros
 fun sumar(base : Int,n1: Int = 1, n2 : Int = 2, n3: Int = 3,n4: Int=4,n5:Int=5) =base + n1 + n2 + n3 + n4 + n5
 
+// funcion unica para el area de cuadrado y rectangulo
+fun area(l1:Int, l2: Int = l1):Int = l1*l2;
 
 fun main(args: Array<String>) {
     println("introduzca base")
@@ -23,4 +25,6 @@ fun main(args: Array<String>) {
     // prueba de sumar
     println("sumar con solo un parametro ${sumar(8)}")
     println("sumar con dos parametros ${sumar(8,5)}")
+
+    println("Area cuadrado 5 ${area(5)}")
 }
