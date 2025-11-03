@@ -8,4 +8,15 @@ Suponemos que se 10 golpes
  */
 fun main(args : Array<String>) {
 
+        val boxeador1 = Boxeador("Juanito")
+        val boxeador2 = Boxeador("Urtain")
+
+        val pelea = Pelea(boxeador1, boxeador2)
+
+        pelea.jugar(10)
+
+        println(boxeador1.toString())
+        println(boxeador2.toString())
+
+    
 }
